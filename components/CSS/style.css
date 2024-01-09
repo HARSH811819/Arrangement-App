@@ -1,0 +1,556 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+  .navbar{             /*      basic navbar CSS */
+    background-color: rgb(174, 193, 187);
+    padding: 0px;
+    height:  50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.navblock{              /*      nav bar side column css */
+    background-color: rgb(211, 236, 228);   
+    width: 24%;
+    height:  45px;
+    border: 1 px solid black;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    
+}
+
+.navblock .navLink{         /*  login signup btn CSS */
+    color: rgb(24, 93, 71);
+    padding: 5px;
+    border: 2px solid rgb(26, 93, 71);
+    margin: 5px;    
+    border-radius: 10px;
+    
+}
+
+.navblock .navLink:hover{       /*  hover CSS of login btn and signup btn  */
+    color: rgb(29, 61, 51);
+    padding: 5px;
+    border: 3px solid rgb(29, 93, 75);
+    margin: 5px;    
+    border-radius: 10px;
+    background-color: rgb(155, 239, 212);   
+    
+}
+
+.navbarLinkbox{                      /*  main navbar css (mid navbar) */
+    width: 50%;
+    height:  45px;
+    background-color: rgb(211, 236, 228);
+  
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.navLink{                        /*    navbar links CSS    */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    color: black;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navLink:hover{                 /*  hover CSS for navbar link tabs*/
+    color: rgb(29, 61, 51);
+    padding: 5px;
+    border: 3px solid rgb(29, 93, 75);
+    margin: 5px;    
+    border-radius: 10px;
+  
+}
+
+.userinfo{ /*Css for specifically side navbarbax in which user details are shown*/
+    display: flex;
+    justify-content: left;
+    align-items: center;       
+}
+
+.userimgbox{    /* user Image outer box*/
+    border: 2px solid rgb(7, 120, 89);
+    width: 10%;
+    height: 85%;
+    border-radius: 0px 10px 10px 10px ;
+    margin: 2px 2px 2px 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    
+}
+.userimgbox:hover{    /* user Image outer box*/
+    border: 2px solid rgb(7, 120, 89);
+    background-color: rgb(243, 249, 248);
+    width: 10%;
+    height: 85%;
+    border-radius: 0px 10px 10px 10px ;
+    margin: 2px 2px 2px 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    cursor:pointer;
+    
+}
+
+ .userimgbox .image{  /* user Image */
+    width: 100%;
+}
+
+.usernamebox{       /* user anme outer box */
+    height: 85%;
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 4px;
+}
+.sidenavbtnbox{
+    border: 3px solid rgb(11, 142, 78);
+    margin: 0px 5px 0px 15px;
+    font-size: larger;
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px  10px 0px 10px;
+
+}
+.sidenavbtnbox:hover{
+    border: 3px solid rgb(29, 107, 44);
+    margin: 0px 5px 0px 15px;
+    font-size: larger;
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px  10px 0px 10px;
+    color: black;
+    cursor: pointer;
+    
+}
+.sidenavbtnbox i{
+    color: rgb(38, 164, 97) !important;
+    
+}
+.sidenavbtnbox i:hover{
+    color: rgb(31, 126, 75) !important;
+    transform: rotate(90deg);
+    
+}
+
+.username{  /*user name when account is loged in*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    color: rgb(8, 82, 63) ;
+}
+
+.logincontainer{              /*  login form and baner animation outer container  */
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    align-items: center;
+}
+
+ .banner{                    /*     CSS for front banner animation    */
+    background-color: aquamarine;
+    width: 60%;
+    height: 100%;
+    
+}
+
+.loginform{                 /*  CSS for front login form  */
+    width: 35%;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 10px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    box-shadow: 0px 1px 1px 1px;
+}
+
+.loginform h1{      /*   CSS for login tag in front login form   */
+    width: 90%;
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.timetablebox{
+    margin-top: 50px !important;
+}
+
+/* side nav bar CSS Starts here */
+
+/* The side navigation menu */
+.sidenav {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+left: 0;
+/* background-color: #111; *//*Black */
+background-color: rgba(174, 193, 187,0.9);
+
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+border-radius: 0px 30px 20px 0px;
+transition: .7s; /* 0.5 second transition effect to slide in the sidenav */
+/* display: flex; */
+/* justify-content: space-between; */
+}
+
+/* collepsed side nav bar link tab box CSS */
+.sideNavLinkbox{  
+/* border: 1px solid black;     */
+width: 240px;
+height: 90vh;
+float: left;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+/* Side nav outer box of form */
+.navFormBox{
+/* background-color: #ffffff; */
+background-color: #dbeae3;
+display: none;
+flex-direction: column;
+width: 70%;
+height: 80vh;
+/* float:   ; */
+/* margin: 0px 30px 30px 30px; */
+
+margin: auto;
+padding: 10px;
+border-radius: 10px;
+/* justify-content: center; */
+align-items: center;
+}
+/* Add Member Form */
+.addMemberForm{
+/* background-color: rgb(37, 122, 122); */
+opacity:1 !important;
+width: 70%;
+border: none !important;
+margin: 0px !important;
+padding: 10x;
+display: none;
+flex-direction: column;
+align-items: center;
+height: fit-content;
+
+}
+.addClasses{
+opacity:1 !important;
+width: 70%;
+border: none !important;
+margin: 0px !important;
+padding: 10x;
+display: none;
+flex-direction: column;
+align-items: center;
+height: fit-content;
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+color: black;
+}
+.addmemberbtn, .addclassesbtn{
+
+margin: 12.5%;
+/* display: none; */
+background-color: #f8f8f8;
+border: 2px solid rgb(14, 81, 52);
+width: 150px;
+height: 40px;
+border-radius: 10px;
+/* transition: margin-left .5s; */
+transition: width .5s;
+font-size: large;
+font-weight: 500;
+color: rgb(13, 65, 47);
+}
+
+.addmemberbtn:hover{
+width: 170px;
+}
+.addclassesbtn:hover{
+width: 170px;
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+/* member list Css */
+.membersBox{
+  /* margin: 10px; */
+  /* border: 1px solid black; */
+  width: 70%;
+  height: 400px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.memberInfo{
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.member{
+  width: 100%;
+  /* width: 75%; */
+}
+.memberbtn{
+  float: right;
+  margin-left: 5px;
+  border: none;
+  width: 40px;
+  background-color: white;
+  margin: 0px 10px 0px 0px;
+  height: 80%;
+  
+}
+.editMember:hover{
+  color: rgb(25, 87, 25);
+  border: 2px solid rgb(14, 95, 37);
+  border-radius: 5px;
+  /* font-size: 24px; */
+}
+.deleteMember:hover{
+  color: rgb(235, 10, 10);
+  border: 2px solid rgb(242, 9, 9);
+  border-radius: 5px;
+  
+}
+
+/* Time table CSS Starts here */
+.tablebox{
+  height: 650px ;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: centers;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(177, 232, 214,0.5);
+  
+}
+#thead{
+  background-color: rgb(136, 237, 203);
+  width: 98%;
+  /* position: absolute; */
+ 
+}
+.tbody{
+  height: 90% ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: centers;
+  padding: 5px;
+  overflow-y: scroll;
+  /* border: 1px solid black; */
+  background-color: rgba(183, 240, 221,0.7);
+  border-radius: 10px;
+  margin: auto;
+}
+.trowHead{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 40px;
+  width: 99%;
+}
+.trowPresent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid green;
+    border-radius: 10px;
+    height: 40px;
+    width: 99%;
+    margin-bottom: 3px;
+}
+.trowAbsent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid red;
+  border-radius: 10px;
+  height: 40px;
+  width: 99%;
+  margin-bottom: 3px;
+}
+.tnamehead{
+  width:20% ;
+  /* border: 1px solid black; */
+  text-align: center;
+  font-weight: 800;
+  background-color: rgb(114, 190, 138);
+  border-radius: 5px;
+  margin: 0px 2px 0px 2px;
+
+}
+
+.tname{
+  width:20% ;
+  /* border: 1px solid black; */
+  background-color: rgb(123, 212, 159);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+ 
+}
+.pdh{
+  font-weight: 900 !important;
+}
+.pd{
+  width: 9%;
+  /* border: 1px solid black; */
+  text-align: center;
+  font-weight: 500;
+  background-color: rgb(157, 222, 187);
+  border-radius: 5px;
+  margin: 0px 2px 0px 2px;
+}
+/* teachers time table filling Ofcanva form CSS starts here */
+.editTimetableForm{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+.time_table_offcanva{
+    background-color: rgba(124, 237, 199, 0.8);
+}
+.arrange{
+    border: 2px solid rgb(17, 64, 27);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.pdlist{
+    /* border: 1px solid black; */
+    width: 90%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-around;
+}
+ /* Attendance form CSS is here */
+ .attendanceform{
+  display: flex;
+  width: 50%;
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid black; */
+}
+.attendanceBtnBox{
+  display: flex;
+  /* justify-content: center; */
+  background-color: rgb(154, 251, 186);
+}
+.editT{
+  border: none;
+  height: 100%;
+  width: 50%;
+  color: green;
+  padding: 0;
+  margin: 0px;
+  font-weight:bolder;
+  /* border: 1px solid black; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.attendanceBtn{
+  width: 100% !important;
+  color: rgb(0, 0, 0) !important;
+}
+.attendanceBtn:hover{
+  background-color: red !important;
+  border-radius: 0px 5px 5px 0px !important;
+  color: black !important;
+}
+
+.present{
+    /* background-color: yellow !important; */
+    border: 2px solid green  !important;
+    /* color: black !important; */
+}
+.absent{
+    /* background-color: rgb(255, 0, 0) !important; */
+    border: 2px solid red !important;
+    /* color: yellow !important; */
+    
+}
+.present:hover{
+    border-radius: 5px 0px 0px 5px;
+
+}
+.absent:hover{
+    border-radius: 5px 0px 0px 5px;
+    background-color: yellow !important;
+
+}
